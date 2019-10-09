@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.title{
+    margin: 1em;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+html, body, .hinweise, .textin{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.textin, .hinwis{
+    text-align: start;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.zahl{
+    width: 35px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.zahl1{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 40px;
+}
+p{
+    font-family: 'Ropa Sans', sans-serif;
+}
+input#username {
+    background-image: url("/static/images/icons8-benutzer-16.png");
+}
+input#password {
+    background-image: url("/static/images/icons8-passwort-1-24.png");
+}
+input#username, input#password{
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-indent: 16px;
+}
+input#username:focus, input#password:focus{
+    background-image:none;
+    text-indent: 0px;
+}
+
+.hinweise{
+    text-align: center;
+}
+.username-password, .alle-minuten,
+.immer-am, .benutzerdefiniert,
+.fehlschlag, .erfolg,
+.automatisch,.allgemein, .jeden-tag{
+    display: flex;
+    flex-direction: row;
+}
+.continer-benachrichtigung, .nachtext,
+.textin, .hinwis, .cron-button{
+    margin: 1em;
+}
+.username-password, .adress-title,
+.aufuehrung, .allgemein, .ben-box{
+    margin: 1em;
+    padding: 1em;
+    border: solid;
+    border-radius: 7px;
+}
+.container-main{
+    max-width: 70%;
+}
+@media only screen and (max-width: 600px) {
+    .container-main{
+        max-width: 80%;
+    }
+}
+.user, .pass{
+    width: 100%;
+}
+.cron-button{
+    display: flex;
+    justify-content: start;
+}
+.cron-button > button{
+    padding: 5px 20px 5px 20px;
+}
+.username{
+    width: 50vw;
+    margin-right: 0.5em;
+}
+.password{
+    width: 50vw;
+    margin-left: 0.5em;
+}
+.jeden-tag{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.immer-am, .titel1{
+    padding-bottom: 1em;
+}
+.adress2, .titel2{
+    width: 100%;
+}
+.fehlschlag, .erfolg,
+.automatisch, .benutzerdefiniert,
+.allgemein, .immer-am,
+.alle-minuten, .jeden-tag{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#auth-box{
+    display: none;
+}
+.auth-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1em;
+}
+.auth-text{
+    padding-left: 1em;
+}
+.onoffswitch {
+    position: relative; width: 70px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid black; border-radius: 7px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "OFF";
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #999999;
+}
+.onoffswitch-inner:after {
+    content: "ON";
+    padding-right: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 16px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 38px;
+    border: 2px solid black; border-radius: 7px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
