@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\hello_django",
+    "\\management",
+    "\\my_app",
+    "\\static",
+    "\\templates"
+  ],
+  "SelectedNode": "\\templates\\Cronjob.html",
+  "PreviewInSolutionExplorer": false
+}
